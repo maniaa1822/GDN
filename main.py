@@ -117,7 +117,7 @@ class Main():
             )
         
         # test            
-        self.model.load_state_dict(torch.load(model_save_path))
+        self.model.load_state_dict(torch.load(model_save_path, weights_only=True))
         best_model = self.model.to(self.device)
 
         _, self.test_result = test(best_model, self.test_dataloader)

@@ -100,6 +100,7 @@ def train(model = None, save_path = '', config={},  train_dataloader=None, val_d
 
 
             if stop_improve_count >= early_stop_win:
+                print(f"Early stopping at epoch {i_epoch} due to no improvement in validation loss for {early_stop_win} consecutive epochs.")
                 break
 
         else:
