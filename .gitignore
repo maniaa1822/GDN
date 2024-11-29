@@ -1,0 +1,8 @@
+pretrained/
+results/
+logs/
+runs/
+temp/
+run_copy.sh
+__pycache__
+P2env/
