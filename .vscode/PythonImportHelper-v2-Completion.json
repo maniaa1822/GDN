@@ -673,6 +673,14 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "utc",
         "importPath": "pytz",
         "description": "pytz",
@@ -911,6 +919,14 @@
         "documentation": {}
     },
     {
+        "label": "SummaryWriter",
+        "importPath": "torch.utils.tensorboard",
+        "description": "torch.utils.tensorboard",
+        "isExtraImport": true,
+        "detail": "torch.utils.tensorboard",
+        "documentation": {}
+    },
+    {
         "label": "TimeDataset",
         "kind": 6,
         "importPath": "datasets.TimeDataset",
@@ -974,11 +990,20 @@
         "documentation": {}
     },
     {
+        "label": "GDN_OG",
+        "kind": 6,
+        "importPath": "models.GDN",
+        "description": "models.GDN",
+        "peekOfCode": "class GDN_OG(nn.Module):\n    \"\"\"Graph Deviation Network main class.\"\"\"\n    def __init__(self, edge_index_sets, node_num, dim=64, out_layer_inter_dim=256, input_dim=10, out_layer_num=1, topk=20):\n        super(GDN, self).__init__()\n        self.edge_index_sets = edge_index_sets\n        edge_index = edge_index_sets[0]\n        embed_dim = dim\n        self.embedding = nn.Embedding(node_num, embed_dim)\n        self.bn_outlayer_in = nn.BatchNorm1d(embed_dim)\n        edge_set_num = len(edge_index_sets)",
+        "detail": "models.GDN",
+        "documentation": {}
+    },
+    {
         "label": "GDN",
         "kind": 6,
         "importPath": "models.GDN",
         "description": "models.GDN",
-        "peekOfCode": "class GDN(nn.Module):\n    \"\"\"Graph Deviation Network main class.\"\"\"\n    def __init__(self, edge_index_sets, node_num, dim=64, out_layer_inter_dim=256, input_dim=10, out_layer_num=1, topk=20):\n        super(GDN, self).__init__()\n        self.edge_index_sets = edge_index_sets\n        edge_index = edge_index_sets[0]\n        embed_dim = dim\n        self.embedding = nn.Embedding(node_num, embed_dim)\n        self.bn_outlayer_in = nn.BatchNorm1d(embed_dim)\n        edge_set_num = len(edge_index_sets)",
+        "peekOfCode": "class GDN(nn.Module):\n    \"\"\"Graph Deviation Network with representation-level fusion of supervised and unsupervised learning.\"\"\"\n    def __init__(self, edge_index_sets, node_num, dim=64, out_layer_inter_dim=256, \n                 input_dim=10, out_layer_num=1, topk=20):\n        super(GDN, self).__init__()\n        self.edge_index_sets = edge_index_sets\n        self.node_num = node_num\n        self.dim = dim\n        self.topk = topk\n        # Shared embedding layer for node representations",
         "detail": "models.GDN",
         "documentation": {}
     },
@@ -1365,7 +1390,7 @@
         "kind": 6,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "class Main():\n    def __init__(self, train_config, env_config, debug=False):\n        self.train_config = train_config\n        self.env_config = env_config\n        self.datestr = None\n        dataset = self.env_config['dataset'] \n        train_orig = pd.read_csv(f'./data/{dataset}/train.csv', sep=',', index_col=0)\n        test_orig = pd.read_csv(f'./data/{dataset}/test.csv', sep=',', index_col=0)\n        train, test = train_orig, test_orig\n        if 'attack' in train.columns:",
+        "peekOfCode": "class Main():\n    def __init__(self, train_config, env_config, debug=False):\n        self.train_config = train_config\n        self.env_config = env_config\n        self.datestr = None\n        dataset = self.env_config['dataset'] \n        train_orig = pd.read_csv(f'./data/{dataset}/test.csv', sep=',', index_col=0)\n        test_orig = pd.read_csv(f'./data/{dataset}/test.csv', sep=',', index_col=0)\n        train, test = train_orig, test_orig\n        if 'attack' in train.columns:",
         "detail": "main",
         "documentation": {}
     },
@@ -1383,7 +1408,16 @@
         "kind": 2,
         "importPath": "train",
         "description": "train",
-        "peekOfCode": "def loss_func(y_pred, y_true):\n    loss = F.mse_loss(y_pred, y_true, reduction='mean')\n    return loss\ndef train(model = None, save_path = '', config={},  train_dataloader=None, val_dataloader=None, feature_map={}, test_dataloader=None, test_dataset=None, dataset_name='swat', train_dataset=None):\n    seed = config['seed']\n    optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=config['decay'])\n    now = time.time()\n    train_loss_list = []\n    cmp_loss_list = []\n    device = get_device()",
+        "peekOfCode": "def loss_func(y_pred, y_true):\n    loss = F.mse_loss(y_pred, y_true, reduction='mean')\n    return loss\ndef train_og(model = None, save_path = '', config={},  train_dataloader=None, val_dataloader=None, feature_map={}, test_dataloader=None, test_dataset=None, dataset_name='swat', train_dataset=None):\n    seed = config['seed']\n    optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=config['decay'])\n    now = time.time()\n    train_loss_list = []\n    cmp_loss_list = []\n    device = get_device()",
+        "detail": "train",
+        "documentation": {}
+    },
+    {
+        "label": "train_og",
+        "kind": 2,
+        "importPath": "train",
+        "description": "train",
+        "peekOfCode": "def train_og(model = None, save_path = '', config={},  train_dataloader=None, val_dataloader=None, feature_map={}, test_dataloader=None, test_dataset=None, dataset_name='swat', train_dataset=None):\n    seed = config['seed']\n    optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=config['decay'])\n    now = time.time()\n    train_loss_list = []\n    cmp_loss_list = []\n    device = get_device()\n    acu_loss = 0\n    min_loss = 1e+8\n    min_f1 = 0",
         "detail": "train",
         "documentation": {}
     },
@@ -1392,7 +1426,7 @@
         "kind": 2,
         "importPath": "train",
         "description": "train",
-        "peekOfCode": "def train(model = None, save_path = '', config={},  train_dataloader=None, val_dataloader=None, feature_map={}, test_dataloader=None, test_dataset=None, dataset_name='swat', train_dataset=None):\n    seed = config['seed']\n    optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=config['decay'])\n    now = time.time()\n    train_loss_list = []\n    cmp_loss_list = []\n    device = get_device()\n    acu_loss = 0\n    min_loss = 1e+8\n    min_f1 = 0",
+        "peekOfCode": "def train(model=None, save_path='', config={}, train_dataloader=None, val_dataloader=None, \n          feature_map={}, test_dataloader=None, test_dataset=None, dataset_name='swat', \n          train_dataset=None):\n    \"\"\"Enhanced training function for supervised GDN.\"\"\"\n    seed = config['seed']\n    optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=config['decay'])\n    device = get_device()\n    min_loss = float('inf')\n    min_f1 = 0\n    stop_improve_count = 0",
         "detail": "train",
         "documentation": {}
     }

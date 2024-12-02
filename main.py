@@ -41,7 +41,7 @@ class Main():
         self.datestr = None
 
         dataset = self.env_config['dataset'] 
-        train_orig = pd.read_csv(f'./data/{dataset}/train.csv', sep=',', index_col=0)
+        train_orig = pd.read_csv(f'./data/{dataset}/test.csv', sep=',', index_col=0)
         test_orig = pd.read_csv(f'./data/{dataset}/test.csv', sep=',', index_col=0)
        
         train, test = train_orig, test_orig
@@ -88,42 +88,63 @@ class Main():
         edge_index_sets = []
         edge_index_sets.append(fc_edge_index)
 
-        self.model = GDN(edge_index_sets, len(feature_map), 
-                dim=train_config['dim'], 
-                input_dim=train_config['slide_win'],
-                out_layer_num=train_config['out_layer_num'],
-                out_layer_inter_dim=train_config['out_layer_inter_dim'],
-                topk=train_config['topk']
-            ).to(self.device)
+        # Modified model configuration
+        self.model = GDN(
+            edge_index_sets=edge_index_sets,
+            node_num=len(feature_map),
+            dim=train_config['dim'],
+            input_dim=train_config['slide_win'],
+            out_layer_num=train_config['out_layer_num'],
+            out_layer_inter_dim=train_config['out_layer_inter_dim'],
+            topk=train_config['topk']
+        ).to(self.device)
 
 
 
     def run(self):
-
         if len(self.env_config['load_model_path']) > 0:
             model_save_path = self.env_config['load_model_path']
         else:
             model_save_path = self.get_save_path()[0]
-
-            self.train_log = train(self.model, model_save_path, 
-                config = train_config,
+            
+            # Train with enhanced training function
+            best_f1 = train(
+                model=self.model,
+                #model_save_path=model_save_path,
+                config=self.train_config,
                 train_dataloader=self.train_dataloader,
-                val_dataloader=self.val_dataloader, 
+                val_dataloader=self.val_dataloader,
                 feature_map=self.feature_map,
                 test_dataloader=self.test_dataloader,
                 test_dataset=self.test_dataset,
                 train_dataset=self.train_dataset,
                 dataset_name=self.env_config['dataset']
             )
+            
+            print(f"Training completed with best validation F1: {best_f1:.4f}")
+
+        # Load best model for testing
+        self.model.load_state_dict(torch.load(model_save_path))
+        self.model.eval()
         
-        # test            
-        self.model.load_state_dict(torch.load(model_save_path, weights_only=True))
-        best_model = self.model.to(self.device)
-
-        _, self.test_result = test(best_model, self.test_dataloader)
-        _, self.val_result = test(best_model, self.val_dataloader)
-
-        self.get_score(self.test_result, self.val_result)
+        # Test phase remains similar but now uses only final output
+        test_predictions = []
+        test_labels = []
+        
+        with torch.no_grad():
+            for x, _, attack_labels, edge_index in self.test_dataloader:
+                x, attack_labels, edge_index = [
+                    item.float().to(self.device) for item in [x, attack_labels, edge_index]
+                ]
+                predictions = self.model(x, edge_index)
+                test_predictions.extend(predictions.cpu().numpy())
+                test_labels.extend(attack_labels.cpu().numpy())
+        
+        # Convert predictions to binary and compute metrics
+        test_predictions = np.array(test_predictions) > 0.5
+        test_f1 = f1_score(test_labels, test_predictions)
+        
+        print(f"Test F1 Score: {test_f1:.4f}")
 
     def get_loaders(self, train_dataset, seed, batch, val_ratio=0.1):
         dataset_len = int(len(train_dataset))
@@ -175,7 +196,6 @@ class Main():
 
 
     def get_save_path(self, feature_name=''):
-
         dir_path = self.env_config['save_path']
         
         if self.datestr is None:

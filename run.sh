@@ -16,11 +16,11 @@ decay=0
 path_pattern="${DATASET}"
 COMMENT="${DATASET}"
 
-EPOCH=10
+EPOCH=100
 report='best'
 
 if [[ "$gpu_n" == "cpu" ]]; then
-    python main.py \
+    python main.py -m debugpy --listen 5678 --wait-for-client main.py \
         -dataset $DATASET \
         -save_path_pattern $path_pattern \
         -slide_stride $SLIDE_STRIDE \

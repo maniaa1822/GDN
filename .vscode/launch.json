@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Debug Main",
+            "type": "python",
+            "request": "launch",
+            "program": "main.py",
+            "args": [
+                "-dataset", "${input:dataset}",
+                "-save_path_pattern", "${input:dataset}",
+                "-slide_stride", "1",
+                "-slide_win", "5",
+                "-batch", "8",
+                "-epoch", "10"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "dataset",
+            "type": "promptString",
+            "description": "Enter dataset name",
+            "default": ""
+        }
+    ]
+}
