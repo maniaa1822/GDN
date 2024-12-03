@@ -1119,7 +1119,7 @@
         "kind": 2,
         "importPath": "data.process-mission1",
         "description": "data.process-mission1",
-        "peekOfCode": "def filter_channels(input_file,output_directory):\n    #create the new folder named output_directory in the \n    #/home/matteo/AI_and_Robotics/EAI/GDN/data directory\n    os.makedirs(output_directory, exist_ok=True)\n    # Read the CSV input\n    df = pd.read_csv(input_file)\n    #list of channels\n    channels = [1,10,11,12,13,14,15,16,17,18]\n    #convert the channels to string\n    channels = [f'{ch}' for ch in channels]",
+        "peekOfCode": "def filter_channels(input_file,output_directory):\n    #create the new folder named output_directory in the \n    #/home/matteo/AI_and_Robotics/EAI/GDN/data directory\n    os.makedirs(output_directory, exist_ok=True)\n    # Read the CSV input\n    df = pd.read_csv(input_file)\n    #list of channels\n    channels = [\n        '1', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '2', '20', '21', '22', \n        '23', '24', '25', '26', '27', '28', '29', '3', '30', '31', '32', '33', '34', '35', '36', ",
         "detail": "data.process-mission1",
         "documentation": {}
     },
