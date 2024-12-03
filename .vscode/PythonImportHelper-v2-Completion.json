@@ -1,0 +1,1684 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "Dataset",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "DataLoader",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "DataLoader",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "random_split",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "Subset",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "DataLoader",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "random_split",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "Subset",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "Dataset",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "DataLoader",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "DataLoader",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "random_split",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "Subset",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn.functional",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn.functional",
+        "description": "torch.nn.functional",
+        "detail": "torch.nn.functional",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "percentile",
+        "importPath": "numpy",
+        "description": "numpy",
+        "isExtraImport": true,
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "Parameter",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "Linear",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "Sequential",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "BatchNorm1d",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "ReLU",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "Parameter",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "Linear",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "Sequential",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "BatchNorm1d",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "ReLU",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "util.time",
+        "description": "util.time",
+        "isExtraImport": true,
+        "detail": "util.time",
+        "documentation": {}
+    },
+    {
+        "label": "timestamp2str",
+        "importPath": "util.time",
+        "description": "util.time",
+        "isExtraImport": true,
+        "detail": "util.time",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "util.time",
+        "description": "util.time",
+        "isExtraImport": true,
+        "detail": "util.time",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "util.time",
+        "description": "util.time",
+        "isExtraImport": true,
+        "detail": "util.time",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "util.time",
+        "description": "util.time",
+        "isExtraImport": true,
+        "detail": "util.time",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "util.env",
+        "description": "util.env",
+        "isExtraImport": true,
+        "detail": "util.env",
+        "documentation": {}
+    },
+    {
+        "label": "get_device",
+        "importPath": "util.env",
+        "description": "util.env",
+        "isExtraImport": true,
+        "detail": "util.env",
+        "documentation": {}
+    },
+    {
+        "label": "set_device",
+        "importPath": "util.env",
+        "description": "util.env",
+        "isExtraImport": true,
+        "detail": "util.env",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "util.env",
+        "description": "util.env",
+        "isExtraImport": true,
+        "detail": "util.env",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "util.env",
+        "description": "util.env",
+        "isExtraImport": true,
+        "detail": "util.env",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "util.env",
+        "description": "util.env",
+        "isExtraImport": true,
+        "detail": "util.env",
+        "documentation": {}
+    },
+    {
+        "label": "GCNConv",
+        "importPath": "torch_geometric.nn",
+        "description": "torch_geometric.nn",
+        "isExtraImport": true,
+        "detail": "torch_geometric.nn",
+        "documentation": {}
+    },
+    {
+        "label": "GATConv",
+        "importPath": "torch_geometric.nn",
+        "description": "torch_geometric.nn",
+        "isExtraImport": true,
+        "detail": "torch_geometric.nn",
+        "documentation": {}
+    },
+    {
+        "label": "EdgeConv",
+        "importPath": "torch_geometric.nn",
+        "description": "torch_geometric.nn",
+        "isExtraImport": true,
+        "detail": "torch_geometric.nn",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "softmax",
+        "importPath": "torch_geometric.utils",
+        "description": "torch_geometric.utils",
+        "isExtraImport": true,
+        "detail": "torch_geometric.utils",
+        "documentation": {}
+    },
+    {
+        "label": "remove_self_loops",
+        "importPath": "torch_geometric.utils",
+        "description": "torch_geometric.utils",
+        "isExtraImport": true,
+        "detail": "torch_geometric.utils",
+        "documentation": {}
+    },
+    {
+        "label": "add_self_loops",
+        "importPath": "torch_geometric.utils",
+        "description": "torch_geometric.utils",
+        "isExtraImport": true,
+        "detail": "torch_geometric.utils",
+        "documentation": {}
+    },
+    {
+        "label": "softmax",
+        "importPath": "torch_geometric.utils",
+        "description": "torch_geometric.utils",
+        "isExtraImport": true,
+        "detail": "torch_geometric.utils",
+        "documentation": {}
+    },
+    {
+        "label": "remove_self_loops",
+        "importPath": "torch_geometric.utils",
+        "description": "torch_geometric.utils",
+        "isExtraImport": true,
+        "detail": "torch_geometric.utils",
+        "documentation": {}
+    },
+    {
+        "label": "add_self_loops",
+        "importPath": "torch_geometric.utils",
+        "description": "torch_geometric.utils",
+        "isExtraImport": true,
+        "detail": "torch_geometric.utils",
+        "documentation": {}
+    },
+    {
+        "label": "softmax",
+        "importPath": "torch_geometric.utils",
+        "description": "torch_geometric.utils",
+        "isExtraImport": true,
+        "detail": "torch_geometric.utils",
+        "documentation": {}
+    },
+    {
+        "label": "Data",
+        "importPath": "torch_geometric.data",
+        "description": "torch_geometric.data",
+        "isExtraImport": true,
+        "detail": "torch_geometric.data",
+        "documentation": {}
+    },
+    {
+        "label": "GraphLayer",
+        "importPath": "models.graph_layer",
+        "description": "models.graph_layer",
+        "isExtraImport": true,
+        "detail": "models.graph_layer",
+        "documentation": {}
+    },
+    {
+        "label": "MessagePassing",
+        "importPath": "torch_geometric.nn.conv",
+        "description": "torch_geometric.nn.conv",
+        "isExtraImport": true,
+        "detail": "torch_geometric.nn.conv",
+        "documentation": {}
+    },
+    {
+        "label": "MessagePassing",
+        "importPath": "torch_geometric.nn.conv",
+        "description": "torch_geometric.nn.conv",
+        "isExtraImport": true,
+        "detail": "torch_geometric.nn.conv",
+        "documentation": {}
+    },
+    {
+        "label": "glorot",
+        "importPath": "torch_geometric.nn.inits",
+        "description": "torch_geometric.nn.inits",
+        "isExtraImport": true,
+        "detail": "torch_geometric.nn.inits",
+        "documentation": {}
+    },
+    {
+        "label": "zeros",
+        "importPath": "torch_geometric.nn.inits",
+        "description": "torch_geometric.nn.inits",
+        "isExtraImport": true,
+        "detail": "torch_geometric.nn.inits",
+        "documentation": {}
+    },
+    {
+        "label": "glorot",
+        "importPath": "torch_geometric.nn.inits",
+        "description": "torch_geometric.nn.inits",
+        "isExtraImport": true,
+        "detail": "torch_geometric.nn.inits",
+        "documentation": {}
+    },
+    {
+        "label": "zeros",
+        "importPath": "torch_geometric.nn.inits",
+        "description": "torch_geometric.nn.inits",
+        "isExtraImport": true,
+        "detail": "torch_geometric.nn.inits",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "rankdata",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "iqr",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "trim_mean",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "iqr",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "iqr",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "f1_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "precision_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "recall_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "roc_auc_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "f1_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "precision_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "recall_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "roc_auc_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "f1_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "precision_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "recall_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "roc_auc_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "f1_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "get_attack_interval",
+        "importPath": "util.data",
+        "description": "util.data",
+        "isExtraImport": true,
+        "detail": "util.data",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "util.data",
+        "description": "util.data",
+        "isExtraImport": true,
+        "detail": "util.data",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "util.data",
+        "description": "util.data",
+        "isExtraImport": true,
+        "detail": "util.data",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "utc",
+        "importPath": "pytz",
+        "description": "pytz",
+        "isExtraImport": true,
+        "detail": "pytz",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "pytz",
+        "description": "pytz",
+        "isExtraImport": true,
+        "detail": "pytz",
+        "documentation": {}
+    },
+    {
+        "label": "utc",
+        "importPath": "pytz",
+        "description": "pytz",
+        "isExtraImport": true,
+        "detail": "pytz",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "pytz",
+        "description": "pytz",
+        "isExtraImport": true,
+        "detail": "pytz",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "glob",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
+        "documentation": {}
+    },
+    {
+        "label": "build_loc_net",
+        "importPath": "util.preprocess",
+        "description": "util.preprocess",
+        "isExtraImport": true,
+        "detail": "util.preprocess",
+        "documentation": {}
+    },
+    {
+        "label": "construct_data",
+        "importPath": "util.preprocess",
+        "description": "util.preprocess",
+        "isExtraImport": true,
+        "detail": "util.preprocess",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "util.preprocess",
+        "description": "util.preprocess",
+        "isExtraImport": true,
+        "detail": "util.preprocess",
+        "documentation": {}
+    },
+    {
+        "label": "get_feature_map",
+        "importPath": "util.net_struct",
+        "description": "util.net_struct",
+        "isExtraImport": true,
+        "detail": "util.net_struct",
+        "documentation": {}
+    },
+    {
+        "label": "get_fc_graph_struc",
+        "importPath": "util.net_struct",
+        "description": "util.net_struct",
+        "isExtraImport": true,
+        "detail": "util.net_struct",
+        "documentation": {}
+    },
+    {
+        "label": "printsep",
+        "importPath": "util.iostream",
+        "description": "util.iostream",
+        "isExtraImport": true,
+        "detail": "util.iostream",
+        "documentation": {}
+    },
+    {
+        "label": "TimeDataset",
+        "importPath": "datasets.TimeDataset",
+        "description": "datasets.TimeDataset",
+        "isExtraImport": true,
+        "detail": "datasets.TimeDataset",
+        "documentation": {}
+    },
+    {
+        "label": "GDN",
+        "importPath": "models.GDN",
+        "description": "models.GDN",
+        "isExtraImport": true,
+        "detail": "models.GDN",
+        "documentation": {}
+    },
+    {
+        "label": "train",
+        "importPath": "train",
+        "description": "train",
+        "isExtraImport": true,
+        "detail": "train",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "importPath": "test ",
+        "description": "test ",
+        "isExtraImport": true,
+        "detail": "test ",
+        "documentation": {}
+    },
+    {
+        "label": "get_err_scores",
+        "importPath": "evaluate",
+        "description": "evaluate",
+        "isExtraImport": true,
+        "detail": "evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "get_best_performance_data",
+        "importPath": "evaluate",
+        "description": "evaluate",
+        "isExtraImport": true,
+        "detail": "evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "get_val_performance_data",
+        "importPath": "evaluate",
+        "description": "evaluate",
+        "isExtraImport": true,
+        "detail": "evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "get_full_err_scores",
+        "importPath": "evaluate",
+        "description": "evaluate",
+        "isExtraImport": true,
+        "detail": "evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "get_best_performance_data",
+        "importPath": "evaluate",
+        "description": "evaluate",
+        "isExtraImport": true,
+        "detail": "evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "get_val_performance_data",
+        "importPath": "evaluate",
+        "description": "evaluate",
+        "isExtraImport": true,
+        "detail": "evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "get_full_err_scores",
+        "importPath": "evaluate",
+        "description": "evaluate",
+        "isExtraImport": true,
+        "detail": "evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "get_best_performance_data",
+        "importPath": "evaluate",
+        "description": "evaluate",
+        "isExtraImport": true,
+        "detail": "evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "get_val_performance_data",
+        "importPath": "evaluate",
+        "description": "evaluate",
+        "isExtraImport": true,
+        "detail": "evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "get_full_err_scores",
+        "importPath": "evaluate",
+        "description": "evaluate",
+        "isExtraImport": true,
+        "detail": "evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "test",
+        "description": "test",
+        "isExtraImport": true,
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "test",
+        "description": "test",
+        "isExtraImport": true,
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "torch.cuda.profiler",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.cuda.profiler",
+        "description": "torch.cuda.profiler",
+        "detail": "torch.cuda.profiler",
+        "documentation": {}
+    },
+    {
+        "label": "Event",
+        "importPath": "torch.cuda",
+        "description": "torch.cuda",
+        "isExtraImport": true,
+        "detail": "torch.cuda",
+        "documentation": {}
+    },
+    {
+        "label": "psutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "psutil",
+        "description": "psutil",
+        "detail": "psutil",
+        "documentation": {}
+    },
+    {
+        "label": "SummaryWriter",
+        "importPath": "torch.utils.tensorboard",
+        "description": "torch.utils.tensorboard",
+        "isExtraImport": true,
+        "detail": "torch.utils.tensorboard",
+        "documentation": {}
+    },
+    {
+        "label": "SummaryWriter",
+        "importPath": "torch.utils.tensorboard",
+        "description": "torch.utils.tensorboard",
+        "isExtraImport": true,
+        "detail": "torch.utils.tensorboard",
+        "documentation": {}
+    },
+    {
+        "label": "autocast",
+        "importPath": "torch.cuda.amp",
+        "description": "torch.cuda.amp",
+        "isExtraImport": true,
+        "detail": "torch.cuda.amp",
+        "documentation": {}
+    },
+    {
+        "label": "GradScaler",
+        "importPath": "torch.cuda.amp",
+        "description": "torch.cuda.amp",
+        "isExtraImport": true,
+        "detail": "torch.cuda.amp",
+        "documentation": {}
+    },
+    {
+        "label": "convert_data_format",
+        "kind": 2,
+        "importPath": "data.process-mission1",
+        "description": "data.process-mission1",
+        "peekOfCode": "def convert_data_format(input_file, train_output, test_output):\n    \"\"\"\n    Convert 3_months.train.csv data format to two files:\n    - Training file without attack column\n    - Test file with attack column\n    Args:t\n        input_file (str): Pathh to input CSV file\n        train_output (str):e Path to training CSV file (no attack column)\n        test_output (str): Path to test CSV file (with attack column)\n    \"\"\"",
+        "detail": "data.process-mission1",
+        "documentation": {}
+    },
+    {
+        "label": "create_channel_list_from_df",
+        "kind": 2,
+        "importPath": "data.process-mission1",
+        "description": "data.process-mission1",
+        "peekOfCode": "def create_channel_list_from_df(input_file, output_file):\n    \"\"\"\n    Create list.txt with channel names from dataframe, excluding timestamp\n    Args:\n        input_file (str): Path to input CSV file\n        output_file (str): Path to output list file\n    \"\"\"\n    # Read the CSV\n    df = pd.read_csv(input_file)\n    # Get channel columns (excluding timestamp)",
+        "detail": "data.process-mission1",
+        "documentation": {}
+    },
+    {
+        "label": "filter_channels",
+        "kind": 2,
+        "importPath": "data.process-mission1",
+        "description": "data.process-mission1",
+        "peekOfCode": "def filter_channels(input_file,output_directory):\n    #create the new folder named output_directory in the \n    #/home/matteo/AI_and_Robotics/EAI/GDN/data directory\n    os.makedirs(output_directory, exist_ok=True)\n    # Read the CSV input\n    df = pd.read_csv(input_file)\n    #list of channels\n    channels = [1,10,11,12,13,14,15,16,17,18]\n    #convert the channels to string\n    channels = [f'{ch}' for ch in channels]",
+        "detail": "data.process-mission1",
+        "documentation": {}
+    },
+    {
+        "label": "TimeDataset",
+        "kind": 6,
+        "importPath": "datasets.TimeDataset",
+        "description": "datasets.TimeDataset",
+        "peekOfCode": "class TimeDataset(Dataset):\n    def __init__(self, raw_data, edge_index, mode='train', config = None):\n        self.raw_data = raw_data\n        self.config = config\n        self.edge_index = edge_index\n        self.mode = mode\n        x_data = raw_data[:-1]\n        labels = raw_data[-1]\n        data = x_data\n        # to tensor",
+        "detail": "datasets.TimeDataset",
+        "documentation": {}
+    },
+    {
+        "label": "OutLayer",
+        "kind": 6,
+        "importPath": "models.GDN copy",
+        "description": "models.GDN copy",
+        "peekOfCode": "class OutLayer(nn.Module):\n    def __init__(self, in_num, node_num, layer_num, inter_num = 512):\n        super(OutLayer, self).__init__()\n        modules = []\n        for i in range(layer_num):\n            # last layer, output shape:1\n            if i == layer_num-1:\n                modules.append(nn.Linear(in_num if layer_num == 1 else inter_num, 1))\n            else:\n                layer_in_num = in_num if i == 0 else inter_num",
+        "detail": "models.GDN copy",
+        "documentation": {}
+    },
+    {
+        "label": "GNNLayer",
+        "kind": 6,
+        "importPath": "models.GDN copy",
+        "description": "models.GDN copy",
+        "peekOfCode": "class GNNLayer(nn.Module):\n    def __init__(self, in_channel, out_channel, inter_dim=0, heads=1, node_num=100):\n        super(GNNLayer, self).__init__()\n        self.gnn = GraphLayer(in_channel, out_channel, inter_dim=inter_dim, heads=heads, concat=False)\n        self.bn = nn.BatchNorm1d(out_channel)\n        self.relu = nn.ReLU()\n        self.leaky_relu = nn.LeakyReLU()\n    def forward(self, x, edge_index, embedding=None, node_num=0):\n        out, (new_edge_index, att_weight) = self.gnn(x, edge_index, embedding, return_attention_weights=True)\n        self.att_weight_1 = att_weight",
+        "detail": "models.GDN copy",
+        "documentation": {}
+    },
+    {
+        "label": "GDN",
+        "kind": 6,
+        "importPath": "models.GDN copy",
+        "description": "models.GDN copy",
+        "peekOfCode": "class GDN(nn.Module):\n    def __init__(self, edge_index_sets, node_num, dim=64, out_layer_inter_dim=256, input_dim=10, out_layer_num=1, topk=20):\n        super(GDN, self).__init__()\n        self.edge_index_sets = edge_index_sets\n        device = get_device()\n        edge_index = edge_index_sets[0]\n        embed_dim = dim\n        self.embedding = nn.Embedding(node_num, embed_dim)\n        self.bn_outlayer_in = nn.BatchNorm1d(embed_dim)\n        edge_set_num = len(edge_index_sets)",
+        "detail": "models.GDN copy",
+        "documentation": {}
+    },
+    {
+        "label": "get_batch_edge_index",
+        "kind": 2,
+        "importPath": "models.GDN copy",
+        "description": "models.GDN copy",
+        "peekOfCode": "def get_batch_edge_index(org_edge_index, batch_num, node_num):\n    # org_edge_index:(2, edge_num)\n    edge_index = org_edge_index.clone().detach()\n    edge_num = org_edge_index.shape[1]\n    batch_edge_index = edge_index.repeat(1,batch_num).contiguous()\n    for i in range(batch_num):\n        batch_edge_index[:, i*edge_num:(i+1)*edge_num] += i*node_num\n    return batch_edge_index.long()\nclass OutLayer(nn.Module):\n    def __init__(self, in_num, node_num, layer_num, inter_num = 512):",
+        "detail": "models.GDN copy",
+        "documentation": {}
+    },
+    {
+        "label": "OutLayer",
+        "kind": 6,
+        "importPath": "models.GDN",
+        "description": "models.GDN",
+        "peekOfCode": "class OutLayer(nn.Module):\n    \"\"\"Output layer implementing MLP.\"\"\"\n    def __init__(self, in_num, node_num, layer_num, inter_num=512):\n        super(OutLayer, self).__init__()\n        modules = []\n        for i in range(layer_num):\n            if i == layer_num-1:\n                modules.append(nn.Linear(in_num if layer_num == 1 else inter_num, 1))\n            else:\n                layer_in_num = in_num if i == 0 else inter_num",
+        "detail": "models.GDN",
+        "documentation": {}
+    },
+    {
+        "label": "GNNLayer",
+        "kind": 6,
+        "importPath": "models.GDN",
+        "description": "models.GDN",
+        "peekOfCode": "class GNNLayer(nn.Module):\n    \"\"\"Graph neural network layer wrapper.\"\"\"\n    def __init__(self, in_channel, out_channel, inter_dim=0, heads=1, node_num=100):\n        super(GNNLayer, self).__init__()\n        self.gnn = GraphLayer(in_channel, out_channel, inter_dim=inter_dim, heads=heads, concat=False)\n        self.bn = nn.BatchNorm1d(out_channel)\n        self.relu = nn.ReLU()\n        self.leaky_relu = nn.LeakyReLU()\n    def forward(self, x, edge_index, embedding=None, node_num=0):\n        out, (new_edge_index, att_weight) = self.gnn(x, edge_index, embedding, return_attention_weights=True)",
+        "detail": "models.GDN",
+        "documentation": {}
+    },
+    {
+        "label": "GDN",
+        "kind": 6,
+        "importPath": "models.GDN",
+        "description": "models.GDN",
+        "peekOfCode": "class GDN(nn.Module):\n    \"\"\"Graph Deviation Network main class.\"\"\"\n    def __init__(self, edge_index_sets, node_num, dim=64, out_layer_inter_dim=256, input_dim=10, out_layer_num=1, topk=20):\n        super(GDN, self).__init__()\n        self.edge_index_sets = edge_index_sets\n        edge_index = edge_index_sets[0]\n        embed_dim = dim\n        self.embedding = nn.Embedding(node_num, embed_dim)\n        self.bn_outlayer_in = nn.BatchNorm1d(embed_dim)\n        edge_set_num = len(edge_index_sets)",
+        "detail": "models.GDN",
+        "documentation": {}
+    },
+    {
+        "label": "get_batch_edge_index_og",
+        "kind": 2,
+        "importPath": "models.GDN",
+        "description": "models.GDN",
+        "peekOfCode": "def get_batch_edge_index_og(org_edge_index, batch_num, node_num):\n    \"\"\"Create batched edge indices.\"\"\"\n    edge_index = org_edge_index.clone().detach()\n    edge_num = org_edge_index.shape[1]\n    batch_edge_index = edge_index.repeat(1, batch_num).contiguous()\n    for i in range(batch_num):\n        batch_edge_index[:, i*edge_num:(i+1)*edge_num] += i*node_num\n    return batch_edge_index.long()\ndef get_batch_edge_index(org_edge_index, batch_num, node_num):\n    \"\"\"Create batched edge indices more efficiently using vectorization.\"\"\"",
+        "detail": "models.GDN",
+        "documentation": {}
+    },
+    {
+        "label": "get_batch_edge_index",
+        "kind": 2,
+        "importPath": "models.GDN",
+        "description": "models.GDN",
+        "peekOfCode": "def get_batch_edge_index(org_edge_index, batch_num, node_num):\n    \"\"\"Create batched edge indices more efficiently using vectorization.\"\"\"\n    edge_index = org_edge_index.clone().detach()\n    # Create offset tensor [0, node_num, 2*node_num, ...]\n    offset = torch.arange(batch_num, device=edge_index.device) * node_num\n    # Add offset to edge_index for each batch\n    # edge_index shape: [2, E], offset shape: [B]\n    # Result shape: [2, E, B]\n    batch_edge_index = edge_index.unsqueeze(-1) + offset.unsqueeze(0).unsqueeze(0)\n    # Reshape to final form [2, E*B]",
+        "detail": "models.GDN",
+        "documentation": {}
+    },
+    {
+        "label": "test_graph_layer",
+        "kind": 2,
+        "importPath": "models.graph-layer-test",
+        "description": "models.graph-layer-test",
+        "peekOfCode": "def test_graph_layer():\n    # Set random seed for reproducibility\n    torch.manual_seed(42)\n    # Test parameters\n    in_channels = 16\n    out_channels = 32\n    num_nodes = 10\n    heads = 2\n    # Create random input features\n    x = torch.randn(num_nodes, in_channels)",
+        "detail": "models.graph-layer-test",
+        "documentation": {}
+    },
+    {
+        "label": "GraphLayer",
+        "kind": 6,
+        "importPath": "models.graph_layer",
+        "description": "models.graph_layer",
+        "peekOfCode": "class GraphLayer(MessagePassing):\n    def __init__(self, in_channels, out_channels, heads=1, concat=True,\n                 negative_slope=0.2, dropout=0, bias=True,inter_dim=-1, **kwargs):\n        # Initialize with 'add' aggregation\n        super().__init__(aggr='add', node_dim=0, \n                         #**kwargs\n                         )\n        self.in_channels = in_channels\n        self.out_channels = out_channels\n        self.heads = heads",
+        "detail": "models.graph_layer",
+        "documentation": {}
+    },
+    {
+        "label": "GraphLayer",
+        "kind": 6,
+        "importPath": "models.graph_layer_original",
+        "description": "models.graph_layer_original",
+        "peekOfCode": "class GraphLayer(MessagePassing):\n    def __init__(self, in_channels, out_channels, heads=1, concat=True,\n                 negative_slope=0.2, dropout=0, bias=True, inter_dim=-1,**kwargs):\n        super(GraphLayer, self).__init__(aggr='add', **kwargs)\n        self.in_channels = in_channels\n        self.out_channels = out_channels\n        self.heads = heads\n        self.concat = concat\n        self.negative_slope = negative_slope\n        self.dropout = dropout",
+        "detail": "models.graph_layer_original",
+        "documentation": {}
+    },
+    {
+        "label": "norm",
+        "kind": 2,
+        "importPath": "scripts.process_swat",
+        "description": "scripts.process_swat",
+        "peekOfCode": "def norm(train, test):\n    normalizer = MinMaxScaler(feature_range=(0, 1)).fit(train) # scale training data to [0,1] range\n    train_ret = normalizer.transform(train)\n    test_ret = normalizer.transform(test)\n    return train_ret, test_ret\n# downsample by 10\ndef downsample(data, labels, down_len):\n    np_data = np.array(data)\n    np_labels = np.array(labels)\n    orig_len, col_num = np_data.shape",
+        "detail": "scripts.process_swat",
+        "documentation": {}
+    },
+    {
+        "label": "downsample",
+        "kind": 2,
+        "importPath": "scripts.process_swat",
+        "description": "scripts.process_swat",
+        "peekOfCode": "def downsample(data, labels, down_len):\n    np_data = np.array(data)\n    np_labels = np.array(labels)\n    orig_len, col_num = np_data.shape\n    down_time_len = orig_len // down_len\n    np_data = np_data.transpose()\n    d_data = np_data[:, :down_time_len*down_len].reshape(col_num, -1, down_len)\n    d_data = np.median(d_data, axis=2).reshape(col_num, -1)\n    d_labels = np_labels[:down_time_len*down_len].reshape(-1, down_len)\n    # if exist anomalies, then this sample is abnormal",
+        "detail": "scripts.process_swat",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "scripts.process_swat",
+        "description": "scripts.process_swat",
+        "peekOfCode": "def main():\n    test = pd.read_csv('./swat_test.csv', index_col=0)\n    train = pd.read_csv('./swat_train.csv', index_col=0)\n    test = test.iloc[:, 1:]\n    train = train.iloc[:, 1:]\n    train = train.fillna(train.mean())\n    test = test.fillna(test.mean())\n    train = train.fillna(0)\n    test = test.fillna(0)\n    # trim column names",
+        "detail": "scripts.process_swat",
+        "documentation": {}
+    },
+    {
+        "label": "norm",
+        "kind": 2,
+        "importPath": "scripts.process_wadi",
+        "description": "scripts.process_wadi",
+        "peekOfCode": "def norm(train, test):\n    normalizer = MinMaxScaler(feature_range=(0, 1)).fit(train) # scale training data to [0,1] range\n    train_ret = normalizer.transform(train)\n    test_ret = normalizer.transform(test)\n    return train_ret, test_ret\n# downsample by 10\ndef downsample(data, labels, down_len):\n    np_data = np.array(data)\n    np_labels = np.array(labels)\n    orig_len, col_num = np_data.shape",
+        "detail": "scripts.process_wadi",
+        "documentation": {}
+    },
+    {
+        "label": "downsample",
+        "kind": 2,
+        "importPath": "scripts.process_wadi",
+        "description": "scripts.process_wadi",
+        "peekOfCode": "def downsample(data, labels, down_len):\n    np_data = np.array(data)\n    np_labels = np.array(labels)\n    orig_len, col_num = np_data.shape\n    down_time_len = orig_len // down_len\n    np_data = np_data.transpose()\n    # print('before downsample', np_data.shape)\n    d_data = np_data[:, :down_time_len*down_len].reshape(col_num, -1, down_len)\n    d_data = np.median(d_data, axis=2).reshape(col_num, -1)\n    d_labels = np_labels[:down_time_len*down_len].reshape(-1, down_len)",
+        "detail": "scripts.process_wadi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "scripts.process_wadi",
+        "description": "scripts.process_wadi",
+        "peekOfCode": "def main():\n    train = pd.read_csv('./WADI_14days.csv', index_col=0)\n    test = pd.read_csv('./WADI_attackdata_labelled.csv', index_col=0)\n    train = train.iloc[:, 2:]\n    test = test.iloc[:, 3:]\n    train = train.fillna(train.mean())\n    test = test.fillna(test.mean())\n    train = train.fillna(0)\n    test = test.fillna(0)\n    # trim column names",
+        "detail": "scripts.process_wadi",
+        "documentation": {}
+    },
+    {
+        "label": "get_attack_interval",
+        "kind": 2,
+        "importPath": "util.data",
+        "description": "util.data",
+        "peekOfCode": "def get_attack_interval(attack): \n    heads = []\n    tails = []\n    for i in range(len(attack)):\n        if attack[i] == 1:\n            if attack[i-1] == 0:\n                heads.append(i)\n            if i < len(attack)-1 and attack[i+1] == 0:\n                tails.append(i)\n            elif i == len(attack)-1:",
+        "detail": "util.data",
+        "documentation": {}
+    },
+    {
+        "label": "eval_scores",
+        "kind": 2,
+        "importPath": "util.data",
+        "description": "util.data",
+        "peekOfCode": "def eval_scores(scores, true_scores, th_steps, return_thresold=False):\n    padding_list = [0]*(len(true_scores) - len(scores))\n    # print(padding_list)\n    if len(padding_list) > 0:\n        scores = padding_list + scores\n    scores_sorted = rankdata(scores, method='ordinal')\n    th_steps = th_steps\n    # th_steps = 500\n    th_vals = np.array(range(th_steps)) * 1.0 / th_steps\n    fmeas = [None] * th_steps",
+        "detail": "util.data",
+        "documentation": {}
+    },
+    {
+        "label": "eval_mseloss",
+        "kind": 2,
+        "importPath": "util.data",
+        "description": "util.data",
+        "peekOfCode": "def eval_mseloss(predicted, ground_truth):\n    ground_truth_list = np.array(ground_truth)\n    predicted_list = np.array(predicted)\n    # mask = (ground_truth_list == 0) | (predicted_list == 0)\n    # ground_truth_list = ground_truth_list[~mask]\n    # predicted_list = predicted_list[~mask]\n    # neg_mask = predicted_list < 0\n    # predicted_list[neg_mask] = 0\n    # err = np.abs(predicted_list / ground_truth_list - 1)\n    # acc = (1 - np.mean(err))",
+        "detail": "util.data",
+        "documentation": {}
+    },
+    {
+        "label": "get_err_median_and_iqr",
+        "kind": 2,
+        "importPath": "util.data",
+        "description": "util.data",
+        "peekOfCode": "def get_err_median_and_iqr(predicted, groundtruth):\n    np_arr = np.abs(np.subtract(np.array(predicted), np.array(groundtruth)))\n    err_median = np.median(np_arr)\n    err_iqr = iqr(np_arr)\n    return err_median, err_iqr\ndef get_err_median_and_quantile(predicted, groundtruth, percentage):\n    np_arr = np.abs(np.subtract(np.array(predicted), np.array(groundtruth)))\n    err_median = np.median(np_arr)\n    # err_iqr = iqr(np_arr)\n    err_delta = percentile(np_arr, int(percentage*100)) - percentile(np_arr, int((1-percentage)*100))",
+        "detail": "util.data",
+        "documentation": {}
+    },
+    {
+        "label": "get_err_median_and_quantile",
+        "kind": 2,
+        "importPath": "util.data",
+        "description": "util.data",
+        "peekOfCode": "def get_err_median_and_quantile(predicted, groundtruth, percentage):\n    np_arr = np.abs(np.subtract(np.array(predicted), np.array(groundtruth)))\n    err_median = np.median(np_arr)\n    # err_iqr = iqr(np_arr)\n    err_delta = percentile(np_arr, int(percentage*100)) - percentile(np_arr, int((1-percentage)*100))\n    return err_median, err_delta\ndef get_err_mean_and_quantile(predicted, groundtruth, percentage):\n    np_arr = np.abs(np.subtract(np.array(predicted), np.array(groundtruth)))\n    err_median = trim_mean(np_arr, percentage)\n    # err_iqr = iqr(np_arr)",
+        "detail": "util.data",
+        "documentation": {}
+    },
+    {
+        "label": "get_err_mean_and_quantile",
+        "kind": 2,
+        "importPath": "util.data",
+        "description": "util.data",
+        "peekOfCode": "def get_err_mean_and_quantile(predicted, groundtruth, percentage):\n    np_arr = np.abs(np.subtract(np.array(predicted), np.array(groundtruth)))\n    err_median = trim_mean(np_arr, percentage)\n    # err_iqr = iqr(np_arr)\n    err_delta = percentile(np_arr, int(percentage*100)) - percentile(np_arr, int((1-percentage)*100))\n    return err_median, err_delta\ndef get_err_mean_and_std(predicted, groundtruth):\n    np_arr = np.abs(np.subtract(np.array(predicted), np.array(groundtruth)))\n    err_mean = np.mean(np_arr)\n    err_std = np.std(np_arr)",
+        "detail": "util.data",
+        "documentation": {}
+    },
+    {
+        "label": "get_err_mean_and_std",
+        "kind": 2,
+        "importPath": "util.data",
+        "description": "util.data",
+        "peekOfCode": "def get_err_mean_and_std(predicted, groundtruth):\n    np_arr = np.abs(np.subtract(np.array(predicted), np.array(groundtruth)))\n    err_mean = np.mean(np_arr)\n    err_std = np.std(np_arr)\n    return err_mean, err_std\ndef get_f1_score(scores, gt, contamination):\n    padding_list = [0]*(len(gt) - len(scores))\n    # print(padding_list)\n    threshold = percentile(scores, 100 * (1 - contamination))\n    if len(padding_list) > 0:",
+        "detail": "util.data",
+        "documentation": {}
+    },
+    {
+        "label": "get_f1_score",
+        "kind": 2,
+        "importPath": "util.data",
+        "description": "util.data",
+        "peekOfCode": "def get_f1_score(scores, gt, contamination):\n    padding_list = [0]*(len(gt) - len(scores))\n    # print(padding_list)\n    threshold = percentile(scores, 100 * (1 - contamination))\n    if len(padding_list) > 0:\n        scores = padding_list + scores\n    pred_labels = (scores > threshold).astype('int').ravel()\n    return f1_score(gt, pred_labels)",
+        "detail": "util.data",
+        "documentation": {}
+    },
+    {
+        "label": "get_device",
+        "kind": 2,
+        "importPath": "util.env",
+        "description": "util.env",
+        "peekOfCode": "def get_device():\n    # return torch.device('cuda' if torch.cuda.is_available() else 'cpu')\n    return _device\ndef set_device(dev):\n    global _device\n    _device = dev\ndef init_work(worker_id, seed):\n    np.random.seed(seed + worker_id)",
+        "detail": "util.env",
+        "documentation": {}
+    },
+    {
+        "label": "set_device",
+        "kind": 2,
+        "importPath": "util.env",
+        "description": "util.env",
+        "peekOfCode": "def set_device(dev):\n    global _device\n    _device = dev\ndef init_work(worker_id, seed):\n    np.random.seed(seed + worker_id)",
+        "detail": "util.env",
+        "documentation": {}
+    },
+    {
+        "label": "init_work",
+        "kind": 2,
+        "importPath": "util.env",
+        "description": "util.env",
+        "peekOfCode": "def init_work(worker_id, seed):\n    np.random.seed(seed + worker_id)",
+        "detail": "util.env",
+        "documentation": {}
+    },
+    {
+        "label": "_device",
+        "kind": 5,
+        "importPath": "util.env",
+        "description": "util.env",
+        "peekOfCode": "_device = None \ndef get_device():\n    # return torch.device('cuda' if torch.cuda.is_available() else 'cpu')\n    return _device\ndef set_device(dev):\n    global _device\n    _device = dev\ndef init_work(worker_id, seed):\n    np.random.seed(seed + worker_id)",
+        "detail": "util.env",
+        "documentation": {}
+    },
+    {
+        "label": "printsep",
+        "kind": 2,
+        "importPath": "util.iostream",
+        "description": "util.iostream",
+        "peekOfCode": "def printsep():\n    print('='*40+'\\n')\ndef save_attack_infos(f1_scores, total_err_scores, labels, names, save_path, dataset, config):\n    slide_win=config['slide_win']\n    down_len=config['down_len']\n    if dataset == 'wadi' or dataset == 'wadi2':\n        s = '09/10/2017 18:00:00'\n    elif dataset == 'swat':\n        s = '28/12/2015 10:00:00'\n    start_s = int(time.mktime(datetime.strptime(s, \"%d/%m/%Y %H:%M:%S\").timetuple()))",
+        "detail": "util.iostream",
+        "documentation": {}
+    },
+    {
+        "label": "save_attack_infos",
+        "kind": 2,
+        "importPath": "util.iostream",
+        "description": "util.iostream",
+        "peekOfCode": "def save_attack_infos(f1_scores, total_err_scores, labels, names, save_path, dataset, config):\n    slide_win=config['slide_win']\n    down_len=config['down_len']\n    if dataset == 'wadi' or dataset == 'wadi2':\n        s = '09/10/2017 18:00:00'\n    elif dataset == 'swat':\n        s = '28/12/2015 10:00:00'\n    start_s = int(time.mktime(datetime.strptime(s, \"%d/%m/%Y %H:%M:%S\").timetuple()))\n    cst8 = timezone('Asia/Shanghai')\n    fmt = '%m/%d %H:%M:%S'",
+        "detail": "util.iostream",
+        "documentation": {}
+    },
+    {
+        "label": "get_feature_map",
+        "kind": 2,
+        "importPath": "util.net_struct",
+        "description": "util.net_struct",
+        "peekOfCode": "def get_feature_map(dataset):\n    feature_file = open(f'./data/{dataset}/list.txt', 'r')\n    feature_list = []\n    for ft in feature_file:\n        feature_list.append(ft.strip())\n    return feature_list\n# graph is 'fully-connect'\ndef get_fc_graph_struc(dataset):\n    feature_file = open(f'./data/{dataset}/list.txt', 'r')\n    struc_map = {}",
+        "detail": "util.net_struct",
+        "documentation": {}
+    },
+    {
+        "label": "get_fc_graph_struc",
+        "kind": 2,
+        "importPath": "util.net_struct",
+        "description": "util.net_struct",
+        "peekOfCode": "def get_fc_graph_struc(dataset):\n    feature_file = open(f'./data/{dataset}/list.txt', 'r')\n    struc_map = {}\n    feature_list = []\n    for ft in feature_file:\n        feature_list.append(ft.strip())\n    for ft in feature_list:\n        if ft not in struc_map:\n            struc_map[ft] = []\n        for other_ft in feature_list:",
+        "detail": "util.net_struct",
+        "documentation": {}
+    },
+    {
+        "label": "get_prior_graph_struc",
+        "kind": 2,
+        "importPath": "util.net_struct",
+        "description": "util.net_struct",
+        "peekOfCode": "def get_prior_graph_struc(dataset):\n    feature_file = open(f'./data/{dataset}/features.txt', 'r')\n    struc_map = {}\n    feature_list = []\n    for ft in feature_file:\n        feature_list.append(ft.strip())\n    for ft in feature_list:\n        if ft not in struc_map:\n            struc_map[ft] = []\n        for other_ft in feature_list:",
+        "detail": "util.net_struct",
+        "documentation": {}
+    },
+    {
+        "label": "get_most_common_features",
+        "kind": 2,
+        "importPath": "util.preprocess",
+        "description": "util.preprocess",
+        "peekOfCode": "def get_most_common_features(target, all_features, max = 3, min = 3):\n    res = []\n    main_keys = target.split('_')\n    for feature in all_features:\n        if target == feature:\n            continue\n        f_keys = feature.split('_')\n        common_key_num = len(list(set(f_keys) & set(main_keys)))\n        if common_key_num >= min and common_key_num <= max:\n            res.append(feature)",
+        "detail": "util.preprocess",
+        "documentation": {}
+    },
+    {
+        "label": "build_net",
+        "kind": 2,
+        "importPath": "util.preprocess",
+        "description": "util.preprocess",
+        "peekOfCode": "def build_net(target, all_features):\n    # get edge_indexes, and index_feature_map\n    main_keys = target.split('_')\n    edge_indexes = [\n        [],\n        []\n    ]\n    index_feature_map = [target]\n    # find closest features(nodes):\n    parent_list = [target]",
+        "detail": "util.preprocess",
+        "documentation": {}
+    },
+    {
+        "label": "construct_data",
+        "kind": 2,
+        "importPath": "util.preprocess",
+        "description": "util.preprocess",
+        "peekOfCode": "def construct_data(data, feature_map, labels=0):\n    res = []\n    for feature in feature_map:\n        if feature in data.columns:\n            res.append(data.loc[:, feature].values.tolist())\n        else:\n            print(feature, 'not exist in data')\n    # append labels as last\n    sample_n = len(res[0])\n    if type(labels) == int:",
+        "detail": "util.preprocess",
+        "documentation": {}
+    },
+    {
+        "label": "build_loc_net",
+        "kind": 2,
+        "importPath": "util.preprocess",
+        "description": "util.preprocess",
+        "peekOfCode": "def build_loc_net(struc, all_features, feature_map=[]):\n    index_feature_map = feature_map\n    edge_indexes = [\n        [],\n        []\n    ]\n    for node_name, node_list in struc.items():\n        if node_name not in all_features:\n            continue\n        if node_name not in index_feature_map:",
+        "detail": "util.preprocess",
+        "documentation": {}
+    },
+    {
+        "label": "asMinutes",
+        "kind": 2,
+        "importPath": "util.time",
+        "description": "util.time",
+        "peekOfCode": "def asMinutes(s):\n    m = math.floor(s / 60)\n    s -= m * 60\n    return '%dm %ds' % (m, s)\ndef timeSincePlus(since, percent):\n    now = time.time()\n    s = now - since\n    es = s / (percent)\n    rs = es - s\n    return '%s (- %s)' % (asMinutes(s), asMinutes(rs))",
+        "detail": "util.time",
+        "documentation": {}
+    },
+    {
+        "label": "timeSincePlus",
+        "kind": 2,
+        "importPath": "util.time",
+        "description": "util.time",
+        "peekOfCode": "def timeSincePlus(since, percent):\n    now = time.time()\n    s = now - since\n    es = s / (percent)\n    rs = es - s\n    return '%s (- %s)' % (asMinutes(s), asMinutes(rs))\ndef timeSince(since):\n    now = time.time()\n    s = now - since\n    m = math.floor(s / 60)",
+        "detail": "util.time",
+        "documentation": {}
+    },
+    {
+        "label": "timeSince",
+        "kind": 2,
+        "importPath": "util.time",
+        "description": "util.time",
+        "peekOfCode": "def timeSince(since):\n    now = time.time()\n    s = now - since\n    m = math.floor(s / 60)\n    s -= m * 60\n    return '%dm %ds' % (m, s)\ndef timestamp2str(sec, fmt, tz):\n    return datetime.fromtimestamp(sec).astimezone(tz).strftime(fmt)",
+        "detail": "util.time",
+        "documentation": {}
+    },
+    {
+        "label": "timestamp2str",
+        "kind": 2,
+        "importPath": "util.time",
+        "description": "util.time",
+        "peekOfCode": "def timestamp2str(sec, fmt, tz):\n    return datetime.fromtimestamp(sec).astimezone(tz).strftime(fmt)",
+        "detail": "util.time",
+        "documentation": {}
+    },
+    {
+        "label": "get_full_err_scores",
+        "kind": 2,
+        "importPath": "evaluate",
+        "description": "evaluate",
+        "peekOfCode": "def get_full_err_scores(test_result, val_result):\n    np_test_result = np.array(test_result)\n    np_val_result = np.array(val_result)\n    all_scores =  None\n    all_normals = None\n    feature_num = np_test_result.shape[-1]\n    labels = np_test_result[2, :, 0].tolist()\n    for i in range(feature_num):\n        test_re_list = np_test_result[:2,:,i]\n        val_re_list = np_val_result[:2,:,i]",
+        "detail": "evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "get_final_err_scores",
+        "kind": 2,
+        "importPath": "evaluate",
+        "description": "evaluate",
+        "peekOfCode": "def get_final_err_scores(test_result, val_result):\n    full_scores, all_normals = get_full_err_scores(test_result, val_result, return_normal_scores=True)\n    all_scores = np.max(full_scores, axis=0)\n    return all_scores\ndef get_err_scores(test_res, val_res):\n    test_predict, test_gt = test_res\n    val_predict, val_gt = val_res\n    n_err_mid, n_err_iqr = get_err_median_and_iqr(test_predict, test_gt)\n    test_delta = np.abs(np.subtract(\n                        np.array(test_predict).astype(np.float64), ",
+        "detail": "evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "get_err_scores",
+        "kind": 2,
+        "importPath": "evaluate",
+        "description": "evaluate",
+        "peekOfCode": "def get_err_scores(test_res, val_res):\n    test_predict, test_gt = test_res\n    val_predict, val_gt = val_res\n    n_err_mid, n_err_iqr = get_err_median_and_iqr(test_predict, test_gt)\n    test_delta = np.abs(np.subtract(\n                        np.array(test_predict).astype(np.float64), \n                        np.array(test_gt).astype(np.float64)\n                    ))\n    epsilon=1e-2\n    err_scores = (test_delta - n_err_mid) / ( np.abs(n_err_iqr) +epsilon)",
+        "detail": "evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "get_loss",
+        "kind": 2,
+        "importPath": "evaluate",
+        "description": "evaluate",
+        "peekOfCode": "def get_loss(predict, gt):\n    return eval_mseloss(predict, gt)\ndef get_f1_scores(total_err_scores, gt_labels, topk=1):\n    print('total_err_scores', total_err_scores.shape)\n    # remove the highest and lowest score at each timestep\n    total_features = total_err_scores.shape[0]\n    # topk_indices = np.argpartition(total_err_scores, range(total_features-1-topk, total_features-1), axis=0)[-topk-1:-1]\n    topk_indices = np.argpartition(total_err_scores, range(total_features-topk-1, total_features), axis=0)[-topk:]\n    topk_indices = np.transpose(topk_indices)\n    total_topk_err_scores = []",
+        "detail": "evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "get_f1_scores",
+        "kind": 2,
+        "importPath": "evaluate",
+        "description": "evaluate",
+        "peekOfCode": "def get_f1_scores(total_err_scores, gt_labels, topk=1):\n    print('total_err_scores', total_err_scores.shape)\n    # remove the highest and lowest score at each timestep\n    total_features = total_err_scores.shape[0]\n    # topk_indices = np.argpartition(total_err_scores, range(total_features-1-topk, total_features-1), axis=0)[-topk-1:-1]\n    topk_indices = np.argpartition(total_err_scores, range(total_features-topk-1, total_features), axis=0)[-topk:]\n    topk_indices = np.transpose(topk_indices)\n    total_topk_err_scores = []\n    topk_err_score_map=[]\n    # topk_anomaly_sensors = []",
+        "detail": "evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "get_val_performance_data",
+        "kind": 2,
+        "importPath": "evaluate",
+        "description": "evaluate",
+        "peekOfCode": "def get_val_performance_data(total_err_scores, normal_scores, gt_labels, topk=1):\n    total_features = total_err_scores.shape[0]\n    topk_indices = np.argpartition(total_err_scores, range(total_features-topk-1, total_features), axis=0)[-topk:]\n    total_topk_err_scores = []\n    topk_err_score_map=[]\n    total_topk_err_scores = np.sum(np.take_along_axis(total_err_scores, topk_indices, axis=0), axis=0)\n    thresold = np.max(normal_scores)\n    pred_labels = np.zeros(len(total_topk_err_scores))\n    pred_labels[total_topk_err_scores > thresold] = 1\n    for i in range(len(pred_labels)):",
+        "detail": "evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "get_best_performance_data",
+        "kind": 2,
+        "importPath": "evaluate",
+        "description": "evaluate",
+        "peekOfCode": "def get_best_performance_data(total_err_scores, gt_labels, topk=1):\n    total_features = total_err_scores.shape[0]\n    # topk_indices = np.argpartition(total_err_scores, range(total_features-1-topk, total_features-1), axis=0)[-topk-1:-1]\n    topk_indices = np.argpartition(total_err_scores, range(total_features-topk-1, total_features), axis=0)[-topk:]\n    total_topk_err_scores = []\n    topk_err_score_map=[]\n    total_topk_err_scores = np.sum(np.take_along_axis(total_err_scores, topk_indices, axis=0), axis=0)\n    final_topk_fmeas ,thresolds = eval_scores(total_topk_err_scores, gt_labels, 400, return_thresold=True)\n    th_i = final_topk_fmeas.index(max(final_topk_fmeas))\n    thresold = thresolds[th_i]",
+        "detail": "evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "Main",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class Main():\n    def __init__(self, train_config, env_config, debug=False):\n        self.train_config = train_config\n        self.env_config = env_config\n        self.datestr = None\n        dataset = self.env_config['dataset'] \n        train_orig = pd.read_csv(f'./data/{dataset}/train.csv', sep=',', index_col=0)\n        test_orig = pd.read_csv(f'./data/{dataset}/test.csv', sep=',', index_col=0)\n        train, test = train_orig, test_orig\n        if 'attack' in train.columns:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "loss_func",
+        "kind": 2,
+        "importPath": "my_train",
+        "description": "my_train",
+        "peekOfCode": "def loss_func(y_pred, y_true):\n    loss = F.mse_loss(y_pred, y_true, reduction='mean')\n    return loss\n# 1. Move data to GPU in batch\ndef prepare_batch(x, labels, attack_labels, edge_index, device):\n    return (x.to(device), \n            labels.to(device), \n            attack_labels.to(device),\n            edge_index.to(device))\n# 2. Enable automatic mixed precision",
+        "detail": "my_train",
+        "documentation": {}
+    },
+    {
+        "label": "prepare_batch",
+        "kind": 2,
+        "importPath": "my_train",
+        "description": "my_train",
+        "peekOfCode": "def prepare_batch(x, labels, attack_labels, edge_index, device):\n    return (x.to(device), \n            labels.to(device), \n            attack_labels.to(device),\n            edge_index.to(device))\n# 2. Enable automatic mixed precision\nfrom torch.cuda.amp import autocast, GradScaler\nscaler = GradScaler()\ndef train(model=None, save_path='', config={}, train_dataloader=None, val_dataloader=None, feature_map={}, test_dataloader=None, test_dataset=None, dataset_name='swat', train_dataset=None):\n    seed = config['seed']",
+        "detail": "my_train",
+        "documentation": {}
+    },
+    {
+        "label": "train",
+        "kind": 2,
+        "importPath": "my_train",
+        "description": "my_train",
+        "peekOfCode": "def train(model=None, save_path='', config={}, train_dataloader=None, val_dataloader=None, feature_map={}, test_dataloader=None, test_dataset=None, dataset_name='swat', train_dataset=None):\n    seed = config['seed']\n    device = get_device()\n    # Training settings\n    optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=config['decay'])\n    scaler = torch.cuda.amp.GradScaler()\n    accumulation_steps = 4  # New parameter\n    writer = SummaryWriter(log_dir='runs/experiment1')\n    # Tracking variables\n    train_loss_list = []",
+        "detail": "my_train",
+        "documentation": {}
+    },
+    {
+        "label": "torch.backends.cudnn.benchmark",
+        "kind": 5,
+        "importPath": "my_train",
+        "description": "my_train",
+        "peekOfCode": "torch.backends.cudnn.benchmark = True\ndef loss_func(y_pred, y_true):\n    loss = F.mse_loss(y_pred, y_true, reduction='mean')\n    return loss\n# 1. Move data to GPU in batch\ndef prepare_batch(x, labels, attack_labels, edge_index, device):\n    return (x.to(device), \n            labels.to(device), \n            attack_labels.to(device),\n            edge_index.to(device))",
+        "detail": "my_train",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "my_train",
+        "description": "my_train",
+        "peekOfCode": "scaler = GradScaler()\ndef train(model=None, save_path='', config={}, train_dataloader=None, val_dataloader=None, feature_map={}, test_dataloader=None, test_dataset=None, dataset_name='swat', train_dataset=None):\n    seed = config['seed']\n    device = get_device()\n    # Training settings\n    optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=config['decay'])\n    scaler = torch.cuda.amp.GradScaler()\n    accumulation_steps = 4  # New parameter\n    writer = SummaryWriter(log_dir='runs/experiment1')\n    # Tracking variables",
+        "detail": "my_train",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def test(model, dataloader):\n    # test\n    loss_func = nn.MSELoss(reduction='mean')\n    device = get_device()\n    test_loss_list = []\n    now = time.time()\n    test_predicted_list = []\n    test_ground_list = []\n    test_labels_list = []\n    t_test_predicted_list = []",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "get_log_dir",
+        "kind": 2,
+        "importPath": "train",
+        "description": "train",
+        "peekOfCode": "def get_log_dir():\n    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')\n    return os.path.join('runs', f'training_{timestamp}')\n# Create writer\nwriter = SummaryWriter(get_log_dir())\ndef loss_func(y_pred, y_true):\n    loss = F.mse_loss(y_pred, y_true, reduction='mean')\n    return loss\ndef train(model = None, save_path = '', config={},  train_dataloader=None, val_dataloader=None, feature_map={}, test_dataloader=None, test_dataset=None, dataset_name='swat', train_dataset=None):\n    seed = config['seed']",
+        "detail": "train",
+        "documentation": {}
+    },
+    {
+        "label": "loss_func",
+        "kind": 2,
+        "importPath": "train",
+        "description": "train",
+        "peekOfCode": "def loss_func(y_pred, y_true):\n    loss = F.mse_loss(y_pred, y_true, reduction='mean')\n    return loss\ndef train(model = None, save_path = '', config={},  train_dataloader=None, val_dataloader=None, feature_map={}, test_dataloader=None, test_dataset=None, dataset_name='swat', train_dataset=None):\n    seed = config['seed']\n    optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=config['decay'])\n    now = time.time()\n    train_loss_list = []\n    cmp_loss_list = []\n    device = get_device()",
+        "detail": "train",
+        "documentation": {}
+    },
+    {
+        "label": "train",
+        "kind": 2,
+        "importPath": "train",
+        "description": "train",
+        "peekOfCode": "def train(model = None, save_path = '', config={},  train_dataloader=None, val_dataloader=None, feature_map={}, test_dataloader=None, test_dataset=None, dataset_name='swat', train_dataset=None):\n    seed = config['seed']\n    optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=config['decay'])\n    now = time.time()\n    train_loss_list = []\n    cmp_loss_list = []\n    device = get_device()\n    acu_loss = 0\n    min_loss = 1e+8\n    min_f1 = 0",
+        "detail": "train",
+        "documentation": {}
+    },
+    {
+        "label": "writer",
+        "kind": 5,
+        "importPath": "train",
+        "description": "train",
+        "peekOfCode": "writer = SummaryWriter(get_log_dir())\ndef loss_func(y_pred, y_true):\n    loss = F.mse_loss(y_pred, y_true, reduction='mean')\n    return loss\ndef train(model = None, save_path = '', config={},  train_dataloader=None, val_dataloader=None, feature_map={}, test_dataloader=None, test_dataset=None, dataset_name='swat', train_dataset=None):\n    seed = config['seed']\n    optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=config['decay'])\n    now = time.time()\n    train_loss_list = []\n    cmp_loss_list = []",
+        "detail": "train",
+        "documentation": {}
+    }
+]

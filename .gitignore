@@ -1,0 +1,12 @@
+pretrained/
+results/
+logs/
+runs/
+temp/
+run_copy.sh
+__pycache__
+P2env/
+data/esa/
+data/preprocessed/
+3_months.train_no_attack.csv
+3_months.train_with_attack.csv
