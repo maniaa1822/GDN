@@ -65,15 +65,30 @@ def build_net(target, all_features):
 
 
 def construct_data(data, feature_map, labels=0):
+    print(f"\nDEBUG: Input data shape: {data.shape}")
+    print(f"DEBUG: Feature map: {feature_map}")
+    print(f"DEBUG: Data columns: {data.columns.tolist()}")
+    
     res = []
 
     for feature in feature_map:
         if feature in data.columns:
-            res.append(data.loc[:, feature].values.tolist())
+            values = data.loc[:, feature].values.tolist()
+            print(f"DEBUG: Adding feature '{feature}' with {len(values)} values")
+            res.append(values)
         else:
-            print(feature, 'not exist in data')
+            print(f"WARNING: Feature '{feature}' not found in data columns")
+    
+    print(f"DEBUG: Number of features processed: {len(res)}")
+    if res:
+        print(f"DEBUG: First feature length: {len(res[0])}")
+        print(f"DEBUG: Sample of first 3 values for each feature:")
+        for i, feature_values in enumerate(res):
+            print(f"  {feature_map[i]}: {feature_values[:3]}")
+    
     # append labels as last
     sample_n = len(res[0])
+    print(f"DEBUG: Sample size: {sample_n}")
 
     if type(labels) == int:
         res.append([labels]*sample_n)

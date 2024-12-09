@@ -54,7 +54,7 @@ def train(model = None, save_path = '', config={},  train_dataloader=None, val_d
 
     i = 0
     epoch = config['epoch']
-    early_stop_win = 15
+    early_stop_win = 100
 
     model.train()
 

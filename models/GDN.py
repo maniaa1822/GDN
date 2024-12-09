@@ -5,7 +5,7 @@ import torch.nn.functional as F
 from torch_geometric.utils import softmax
 import math
 
-from .graph_layer import GraphLayer
+from .graph_layer import GraphLayer as GraphLayer
 
 def get_batch_edge_index_og(org_edge_index, batch_num, node_num):
     """Create batched edge indices."""
@@ -34,6 +34,28 @@ def get_batch_edge_index(org_edge_index, batch_num, node_num):
     batch_edge_index = batch_edge_index.reshape(2, -1)
     
     return batch_edge_index.long()
+
+def compute_temporal_correlation(x, window_size):
+    """
+    Compute temporal correlation between sensors using sliding window.
+    Args:
+        x: Input tensor [batch_size, num_nodes, window_size]
+        window_size: Size of sliding window
+    Returns:
+        Correlation matrix [num_nodes, num_nodes]
+    """
+    batch_size, num_nodes, _ = x.shape
+    x_reshaped = x.transpose(0, 1).reshape(num_nodes, -1)
+    
+    # Center the data
+    x_centered = x_reshaped - x_reshaped.mean(dim=1, keepdim=True)
+    
+    # Compute correlation matrix
+    cov = torch.mm(x_centered, x_centered.t())
+    std = torch.sqrt(torch.diagonal(cov) + 1e-8)
+    corr = cov / (torch.outer(std, std) + 1e-8)
+    
+    return corr
 
 class OutLayer(nn.Module):
     """Output layer implementing MLP."""
@@ -147,17 +169,25 @@ class GDN(nn.Module):
 
             cos_ji_mat = torch.matmul(weights, weights.T)
             normed_mat = torch.matmul(weights.norm(dim=-1).view(-1,1), weights.norm(dim=-1).view(1,-1))
-            cos_ji_mat = cos_ji_mat / normed_mat
+            cos_ji_mat = cos_ji_mat / (normed_mat + 1e-8)
 
-            
-            dim = weights.shape[-1]
-            topk_num = self.topk
+            temporal_corr = compute_temporal_correlation(
+                x.view(batch_num, node_num, -1), 
+                all_feature
+            )
+            use_temporal_corr = True  # Set this flag to use temporal correlation
 
-            topk_indices_ji = torch.topk(cos_ji_mat, topk_num, dim=-1)[1]
+            if use_temporal_corr:
+                alpha = 0.7  # Hyperparameter to balance similarities
+                combined_sim = alpha * cos_ji_mat + (1 - alpha) * temporal_corr
+            else:
+                combined_sim = cos_ji_mat
+
+            topk_indices_ji = torch.topk(combined_sim, self.topk, dim=-1)[1]
 
             self.learned_graph = topk_indices_ji
 
-            gated_i = torch.arange(0, node_num, device=device).view(-1,1).repeat(1, topk_num).flatten().unsqueeze(0)
+            gated_i = torch.arange(0, node_num, device=device).view(-1,1).repeat(1, self.topk).flatten().unsqueeze(0)
             gated_j = topk_indices_ji.flatten().unsqueeze(0)
             gated_edge_index = torch.cat((gated_j, gated_i), dim=0)
 

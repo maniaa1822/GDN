@@ -185,4 +185,106 @@ class GDN(nn.Module):
    
 
         return out
+class TemporalAttention(nn.Module):
+    """Temporal attention module to capture time-based relationships."""
+    def __init__(self, in_channels, window_size):
+        super().__init__()
+        self.window_size = window_size
         
+        # Temporal query/key/value projections
+        self.query_proj = nn.Linear(in_channels, in_channels)
+        self.key_proj = nn.Linear(in_channels, in_channels)
+        self.value_proj = nn.Linear(in_channels, in_channels)
+        
+        # Learnable temperature parameter
+        self.temperature = nn.Parameter(torch.sqrt(torch.FloatTensor([in_channels])))
+        
+    def forward(self, x):
+        # x shape: [batch_size, num_nodes, window_size, channels]
+        batch_size, num_nodes, window_size, channels = x.size()
+        
+        # Project to query/key/value
+        q = self.query_proj(x)  # [batch, nodes, window, channels]
+        k = self.key_proj(x)    # [batch, nodes, window, channels]
+        v = self.value_proj(x)  # [batch, nodes, window, channels]
+        
+        # Compute temporal attention scores
+        scores = torch.matmul(q, k.transpose(-2, -1)) / (self.temperature + 1e-6)
+        attention = F.softmax(scores, dim=-1)  # [batch, nodes, window, window]
+        
+        # Apply attention to values
+        out = torch.matmul(attention, v)  # [batch, nodes, window, channels]
+        
+        return out, attention
+
+class EnhancedGDN(nn.Module):
+    """GDN with both spatial and temporal attention."""
+    def __init__(self, edge_index_sets, node_num, dim=64, out_layer_inter_dim=256, 
+                 input_dim=10, out_layer_num=1, topk=20, window_size=10):
+        super().__init__()
+        
+        self.edge_index_sets = edge_index_sets
+        self.node_num = node_num
+        self.dim = dim
+        self.window_size = window_size
+        
+        # Node embeddings (as before)
+        self.embedding = nn.Embedding(node_num, dim)
+        
+        # Spatial attention (GNN layers as before)
+        self.spatial_layers = nn.ModuleList([
+            GNNLayer(input_dim, dim, inter_dim=dim+dim, heads=1)
+            for _ in range(len(edge_index_sets))
+        ])
+        
+        # Add temporal attention
+        self.temporal_attention = TemporalAttention(dim, window_size)
+        
+        # Fusion layer to combine spatial and temporal features
+        self.fusion = nn.Sequential(
+            nn.Linear(dim * 2, dim),
+            nn.ReLU(),
+            nn.Linear(dim, dim)
+        )
+        
+        # Output layer
+        self.out_layer = OutLayer(dim, node_num, out_layer_num, 
+                                inter_num=out_layer_inter_dim)
+        
+        # Initialize other parameters as before
+        self.init_params()
+    
+    def forward(self, data, edge_index):
+        batch_size, node_num, seq_len = data.shape
+        
+        # Reshape input for temporal attention
+        x_temporal = data.view(batch_size, node_num, -1, self.dim)
+        temporal_out, temporal_attention = self.temporal_attention(x_temporal)
+        
+        # Spatial attention (existing GNN logic)
+        x_spatial = data.view(-1, seq_len).contiguous()
+        spatial_features = []
+        
+        for i, edge_index in enumerate(self.edge_index_sets):
+            if isinstance(edge_index, torch.Tensor):
+                edge_index = get_batch_edge_index(edge_index, batch_size, node_num)
+            
+            out = self.spatial_layers[i](x_spatial, edge_index,
+                                       embedding=self.embedding.weight)
+            spatial_features.append(out)
+        
+        spatial_out = torch.cat(spatial_features, dim=1)
+        spatial_out = spatial_out.view(batch_size, node_num, -1)
+        
+        # Combine temporal and spatial features
+        temporal_out = temporal_out.view(batch_size, node_num, -1)
+        combined = torch.cat([spatial_out, temporal_out], dim=-1)
+        fused = self.fusion(combined)
+        
+        # Final prediction
+        out = self.out_layer(fused)
+        return out.view(batch_size * node_num)
+
+    def init_params(self):
+        """Initialize network parameters."""
+        nn.init.kaiming_uniform_(self.embedding.weight, a=math.sqrt(5))

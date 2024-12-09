@@ -1160,6 +1160,24 @@
         "documentation": {}
     },
     {
+        "label": "TemporalAttention",
+        "kind": 6,
+        "importPath": "models.GDN copy",
+        "description": "models.GDN copy",
+        "peekOfCode": "class TemporalAttention(nn.Module):\n    \"\"\"Temporal attention module to capture time-based relationships.\"\"\"\n    def __init__(self, in_channels, window_size):\n        super().__init__()\n        self.window_size = window_size\n        # Temporal query/key/value projections\n        self.query_proj = nn.Linear(in_channels, in_channels)\n        self.key_proj = nn.Linear(in_channels, in_channels)\n        self.value_proj = nn.Linear(in_channels, in_channels)\n        # Learnable temperature parameter",
+        "detail": "models.GDN copy",
+        "documentation": {}
+    },
+    {
+        "label": "EnhancedGDN",
+        "kind": 6,
+        "importPath": "models.GDN copy",
+        "description": "models.GDN copy",
+        "peekOfCode": "class EnhancedGDN(nn.Module):\n    \"\"\"GDN with both spatial and temporal attention.\"\"\"\n    def __init__(self, edge_index_sets, node_num, dim=64, out_layer_inter_dim=256, \n                 input_dim=10, out_layer_num=1, topk=20, window_size=10):\n        super().__init__()\n        self.edge_index_sets = edge_index_sets\n        self.node_num = node_num\n        self.dim = dim\n        self.window_size = window_size\n        # Node embeddings (as before)",
+        "detail": "models.GDN copy",
+        "documentation": {}
+    },
+    {
         "label": "get_batch_edge_index",
         "kind": 2,
         "importPath": "models.GDN copy",
@@ -1214,6 +1232,15 @@
         "documentation": {}
     },
     {
+        "label": "compute_temporal_correlation",
+        "kind": 2,
+        "importPath": "models.GDN",
+        "description": "models.GDN",
+        "peekOfCode": "def compute_temporal_correlation(x, window_size):\n    \"\"\"\n    Compute temporal correlation between sensors using sliding window.\n    Args:\n        x: Input tensor [batch_size, num_nodes, window_size]\n        window_size: Size of sliding window\n    Returns:\n        Correlation matrix [num_nodes, num_nodes]\n    \"\"\"\n    batch_size, num_nodes, _ = x.shape",
+        "detail": "models.GDN",
+        "documentation": {}
+    },
+    {
         "label": "test_graph_layer",
         "kind": 2,
         "importPath": "models.graph-layer-test",
@@ -1223,11 +1250,20 @@
         "documentation": {}
     },
     {
+        "label": "GraphLayer_og",
+        "kind": 6,
+        "importPath": "models.graph_layer",
+        "description": "models.graph_layer",
+        "peekOfCode": "class GraphLayer_og(MessagePassing):\n    def __init__(self, in_channels, out_channels, heads=1, concat=True,\n                 negative_slope=0.2, dropout=0, bias=True,inter_dim=-1, **kwargs):\n        # Initialize with 'add' aggregation\n        super().__init__(aggr='add', node_dim=0, \n                         #**kwargs\n                         )\n        self.in_channels = in_channels\n        self.out_channels = out_channels\n        self.heads = heads",
+        "detail": "models.graph_layer",
+        "documentation": {}
+    },
+    {
         "label": "GraphLayer",
         "kind": 6,
         "importPath": "models.graph_layer",
         "description": "models.graph_layer",
-        "peekOfCode": "class GraphLayer(MessagePassing):\n    def __init__(self, in_channels, out_channels, heads=1, concat=True,\n                 negative_slope=0.2, dropout=0, bias=True,inter_dim=-1, **kwargs):\n        # Initialize with 'add' aggregation\n        super().__init__(aggr='add', node_dim=0, \n                         #**kwargs\n                         )\n        self.in_channels = in_channels\n        self.out_channels = out_channels\n        self.heads = heads",
+        "peekOfCode": "class GraphLayer(MessagePassing):\n    def __init__(self, in_channels, out_channels, heads=1, concat=True,\n                 negative_slope=0.2, dropout=0, bias=True, inter_dim=-1, **kwargs):\n        super().__init__(aggr='add', node_dim=0)\n        self.in_channels = in_channels\n        self.out_channels = out_channels\n        self.heads = heads\n        self.concat = concat\n        self.negative_slope = negative_slope\n        self.dropout = dropout",
         "detail": "models.graph_layer",
         "documentation": {}
     },
@@ -1470,7 +1506,7 @@
         "kind": 2,
         "importPath": "util.preprocess",
         "description": "util.preprocess",
-        "peekOfCode": "def construct_data(data, feature_map, labels=0):\n    res = []\n    for feature in feature_map:\n        if feature in data.columns:\n            res.append(data.loc[:, feature].values.tolist())\n        else:\n            print(feature, 'not exist in data')\n    # append labels as last\n    sample_n = len(res[0])\n    if type(labels) == int:",
+        "peekOfCode": "def construct_data(data, feature_map, labels=0):\n    print(f\"\\nDEBUG: Input data shape: {data.shape}\")\n    print(f\"DEBUG: Feature map: {feature_map}\")\n    print(f\"DEBUG: Data columns: {data.columns.tolist()}\")\n    res = []\n    for feature in feature_map:\n        if feature in data.columns:\n            values = data.loc[:, feature].values.tolist()\n            print(f\"DEBUG: Adding feature '{feature}' with {len(values)} values\")\n            res.append(values)",
         "detail": "util.preprocess",
         "documentation": {}
     },
