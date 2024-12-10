@@ -20,7 +20,10 @@ from datetime import timedelta
 from util.preprocess import construct_data, build_loc_net
 from util.net_struct import get_feature_map, get_fc_graph_struc
 from datasets.TimeDataset import TimeDataset
-
+#python3 run.py --dataset msl
+#python3 run.py --dataset msl --mode test
+#python3 run.py --dataset esa-sub-1
+#python3 run.py --dataset esa-sub-1 --mode test
 # Default configuration with commonly used values
 @dataclass
 class TrainingConfig:
@@ -28,21 +31,21 @@ class TrainingConfig:
     # Data params
     dataset: str = "msl"  # Dataset name
     data_path: str = "data/"  # Base data directory
-    batch_size: int = 512
+    batch_size: int = 256
     val_ratio: float = 0.2
-    slide_win: int = 25
-    slide_stride: int = 5
+    slide_win: int = 5
+    slide_stride: int = 1
     
     # Model params
     embed_dim: int = 64
     out_layer_num: int = 1 
-    out_layer_inter_dim: int = 256
+    out_layer_inter_dim: int = 128
     topk: int = 5
     
     # Training params
-    epochs: int = 100
+    epochs: int = 10
     learning_rate: float = 0.001
-    weight_decay: float = 0
+    weight_decay: float = 1e-4
     early_stopping_patience: int = 15
     seed: int = 42
     device: str = "cuda" if torch.cuda.is_available() else "cpu"
